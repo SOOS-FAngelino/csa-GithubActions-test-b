@@ -14,9 +14,9 @@ jobs:
           client_id: ${{ secrets.QA_SOOS_CLIENT_ID }}
           api_key: ${{ secrets.QA_SOOS_API_KEY }}
           api_url: "https://qa-api.soos.io/api/"        
-          project_name: "GitHub Actions - CSA"
+          project_name: "GitHub Actions - CSA - beta image"
           target_image: "ericallard/elasticsearch:x86"  
-          image_tag: latest
+          image_tag: beta
           log_level: INFO
           export_format: SARIF
           export_file_type: JSON
