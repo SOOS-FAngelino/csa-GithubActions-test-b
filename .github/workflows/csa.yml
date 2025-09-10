@@ -14,13 +14,12 @@ jobs:
           client_id: ${{ secrets.QA_SOOS_CLIENT_ID }}
           api_key: ${{ secrets.QA_SOOS_API_KEY }}
           api_url: "https://qa-api.soos.io/api/"        
-          project_name: "csa-gha-13"
+          project_name: "csa-gha-REGRESSION-13"
           target_image: "ericallard/elasticsearch:x86"  
           image_tag: alpha
           log_level: INFO
           export_format: SARIF
           export_file_type: JSON
-
 
       - uses: actions/upload-artifact@v4
         with:
